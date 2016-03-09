@@ -6,6 +6,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /blog/post/:title.html
 logo: false
+comments: true
 paginate: 5
 #baseurl: /blog
 domain_name: 'http://chztv.github.io'
