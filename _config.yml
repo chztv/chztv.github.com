@@ -7,7 +7,7 @@ highlighter: rouge
 permalink: /blog/post/:title.html
 logo: false
 comments: true
-paginate: 5
+paginate: 10
 baseurl: /
 domain_name: 'http://chztv.com'
 google_analytics: 'UA-XXXXXXXX-X'
