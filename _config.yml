@@ -8,8 +8,8 @@ permalink: /blog/post/:title.html
 logo: false
 comments: true
 paginate: 5
-#baseurl: /blog
-domain_name: 'http://chztv.github.io'
+baseurl: /
+domain_name: 'http://chztv.com'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
