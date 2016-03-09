@@ -16,6 +16,4 @@ tags:
 
 周一上班的时候收到了一个全新的雷蛇，包装也在。这次今后体验真不错，对京东好感倍增！
 
-![京东-鼠标](http://img7.chztv.com/2016-0103/mouse1.jpg!400px)
-
-![京东鼠标2](http://img7.chztv.com/2016-0103/mouse2.jpg!400px)
+![京东-鼠标](http://img7.chztv.com/2016-0103/mouse1.jpg!400px)![京东鼠标2](http://img7.chztv.com/2016-0103/mouse2.jpg!400px)
