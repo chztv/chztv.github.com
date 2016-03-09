@@ -4,13 +4,13 @@ meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
 markdown: kramdown
 highlighter: rouge
-permalink: /post/:title.html
+permalink: /blog/post/:title.html
 logo: false
 paginate: 5
-baseurl: /blog
-domain_name: 'http://chztv.com'
+#baseurl: /blog
+domain_name: 'http://chztv.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'http://chztv.com/'
+url:            'http://chztv.github.io/'
 author:         'Paul chan'
