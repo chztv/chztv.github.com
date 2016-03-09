@@ -1,0 +1,16 @@
+name: Paul' Blog
+description: 有了钱，在这个世界上可以做很多事，就是无法用钱来买青春
+meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+markdown: kramdown
+highlighter: pygments
+permalink: /post/:title.html
+logo: false
+paginate: 10
+baseurl: /blog
+domain_name: 'http://chztv.com'
+google_analytics: 'UA-XXXXXXXX-X'
+
+# Details for the RSS feed generator
+url:            'http://chztv.com/'
+author:         'Paul chan'

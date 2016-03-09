@@ -1,0 +1,76 @@
+---
+layout: default
+title: Home
+cover: false
+about: 'about.html'
+---
+
+<!--header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+            {% if page.logo %}
+                <a class="blog-logo" href="{{ site.baseurl }}">
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                </a>
+            {% endif %}
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">
+                {% if site.description %} {{ site.description }}. {% endif %}
+                {% if page.about %} <a href='{{ site.baseurl }}/{{ page.about }}'> About me </a> {% endif %}
+            </h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header-->
+
+<div class="nav">
+    <div class="list">
+        <a href="https://medium.com/@nikkihk" class="nav-item">Nikki</a>
+        <a href="https://www.paulreina.com" class="nav-item">Paul & Reina</a>
+        <a href="/blog/archive.html" class="nav-item">归档</a>
+        <a href="/blog/about.html" class="nav-item">关于</a>
+    </div>
+    <a href="{{ site.baseurl }}" title="{{ site.description }}" class="logo"> <strong>{{ site.name }}</strong></a>
+    <span class="description">{{ site.description }}</span>
+</div>
+
+
+<main id="content" class="content" role="main" style="padding-top:4rem;">
+
+
+    <div class="extra-pagination inner">
+        {% include pagination.html %}
+    </div>
+
+    {% for post in paginator.posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="entry-meta">
+                <span class="posted-on">Posted on <time class="entry-date published" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time></span>
+                {% if site.author %}
+                    <span class="byline"> by {{ site.author }}</span>
+                {% endif %}
+            </div>
+        </header>
+        
+        <section class="post-content">
+            <!--{{ post.content | split:'' | first }}--> <!--a class="read-more" href="{{ post.url }}">阅读全文&raquo;</a-->
+
+            {% if post.content contains "<!--more-->" %}
+            {{ post.content | split:"<!--more-->" | first }}
+                <a href="{{ site.baseurl }}{{ post.url }}" class="more-link">Read More <span class="meta-nav">»</span></a>
+            {% else %}
+            {{ post.content }}
+            {% endif %}
+        </section>
+        
+    </article>
+    {% endfor %}
+    {% include pagination.html %}
+
+</main>
