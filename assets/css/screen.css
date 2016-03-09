@@ -214,8 +214,8 @@ h4, h5, h6 {
 
 h1 {
     font-size: 3.6rem;
-    /*letter-spacing: -1px;*/
-    text-indent: -3px;
+    /*letter-spacing: -1px;
+    text-indent: -3px;*/
 }
 
 h2 {
@@ -780,6 +780,7 @@ body:not(.post-template) .post-title {
     line-height: 2.2rem;
     color: #9EABB3;*/
     font: italic 1rem serif;
+    margin: 10px 0 40px;
 }
 
 .author-thumb {
@@ -895,7 +896,7 @@ body:not(.post-template) .post-title {
 
 /* Keep images centred and within the bounds of the post-width */
 .post-content img {
-    display: block;
+    display: inline-block;
     max-width: 100%;
     height: auto;
     /*margin: 0 auto;*/

@@ -4,11 +4,9 @@ author: Paul
 layout: post
 categories:
   - 云存储
-    tags:
-  - 云空间
-  - 又拍
-
---- 
+tags:
+  - 云存储,云空间,又拍
+---
 
 
 ![又拍云](http://upy.chztv.com/2013-0709/upy8year.jpg)
